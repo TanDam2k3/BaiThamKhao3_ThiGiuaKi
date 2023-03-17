@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(33, 33, 193);
+}
+#header .header-left {
+    width: 30%;
+    color: white;
+}
+#header .header-right {
+    width: 70%;
+    height: 100px;
+}
+#header .header-right .menuMain {
+    list-style-type: none;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#header .header-right .menuMain .item {
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(88, 88, 245);
+    margin: 0 5px;
+}
+#header .header-right .menuMain .menuChild{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+}
+#header .header-right .menuMain .menuChild li{
+    background-color: rgb(88, 88, 245);
+    padding: 10px;
+}
+#main .header-right .menuMain .menu-list{
+    position: relative;
+}
+#main .header-right .menuMain .menu-list:hover .menuChild{
+    display: block;
+}
+
+#content{
+    margin: 50px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#content .content-left {
+    width: 65%;
+}
+#content .content-right{
+    width: 35%;
+    background-color: rgb(245, 237, 237);
+    
+}
+#content .content-left .content-text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 2px dashed rgb(114, 114, 114);
+    padding: 10px 0;
+    margin: 10px 40px 0 0;
+}
+#content .content-left .content-text .text-left{
+    width: 50%;
+    margin-right: 30px;
+}
+#content .content-left .content-text .text-right{
+    width: 30%;
+    color: rgb(114, 114, 114);
+}
+#content .content-right .text-right .decription{
+    margin-top: 20px;
+    padding: 25px 0;
+    border-top: 2px dashed rgb(114, 114, 114);
+}
+
+#footer{
+    font-size: 16px; 
+    padding: 10px; 
+    background-color: rgb(123, 123, 250);
+    text-align: center;
+}
